@@ -56,7 +56,7 @@ A linked list is a linear data structure, in which the elements are not stored a
 [![-----------------------------------------------------](
 https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
 
-## Algorithms
+## Assignments
 
 ### Next
 
