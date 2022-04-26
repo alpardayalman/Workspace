@@ -67,16 +67,15 @@ Inputs:   1->2->3->4->5->6->7->8->9->NULL and k = 3
 Output:   3->2->1->4->5->6->9->8->7->NULL. 
 ```
 ```
-Given a linked list consisting of L nodes and given a number N. The task is to find the Nth node from the end of the linked list.
+Given a linked list consisting of L nodes and given a number N. The task is to find the Nth node 
+from the end of the linked list.
 
 Input:
 
 LinkedList: 1->2->3->4->5->6->7->8->9     N = 2
 Output: 8
 
-Explanation: In the first example, there
-are 9 nodes in linked list and we need
-to find 2nd node from end. 2nd node
-from end os 8.  
+Explanation: In the first example, there are 9 nodes in linked list and we need to find 2nd node 
+from end. 2nd node from end os 8.  
 ```
 ---
