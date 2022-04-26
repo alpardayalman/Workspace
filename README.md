@@ -59,7 +59,8 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 ## Assignments
 
 ```
-Given a linked list, write a function to reverse every alternate k nodes (where k is an input to the function) in an efficient way. Give the complexity of your algorithm.
+Given a linked list, write a function to reverse every alternate k nodes (where k is an input 
+to the function) in an efficient way. Give the complexity of your algorithm.
 
 Example:
 
