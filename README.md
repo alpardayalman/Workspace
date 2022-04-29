@@ -11,6 +11,7 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 - [Teacher](#teacher)
 - [Data Structures](#data-structures)
   - [Linked List](#linked-list)
+  - [Stacks](#stacks)
 - [Assignments](#assignments)
   - [Next](#next)
 
