@@ -53,6 +53,15 @@ A linked list is a linear data structure, in which the elements are not stored a
 </td>
 </table>
 
+### Stacks
+<table>
+<td>
+  
+In computer science, a stack is an abstract data type that serves as a collection of elements, with two main principal operations: Push, which adds an element to the collection, and Pop, which removes the most recently added element that was not yet removed.
+
+</td>
+</table>
+
 [![-----------------------------------------------------](
 https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
 
