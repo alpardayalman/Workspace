@@ -101,7 +101,7 @@ void print(struct sNode *top){
 // Sorting
 void sortedInsert(struct sNode **start, int a)
 {
-    if (isEmpty(*start) || a < peek(*start))
+    if (isEmpty(*start) || a > peek(*start))
     {
         push(start, a);
         return;
