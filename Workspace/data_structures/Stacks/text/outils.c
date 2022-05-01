@@ -28,7 +28,7 @@ int peek(Stack **pt) {
 void print(Stack **pt) {
 	Stack *ptr = *pt;
 	while (ptr) {
-		printf("%d ",ptr->data);
+		printf("%c",ptr->data);
 		ptr = ptr->next;
 	}
 }
@@ -75,20 +75,12 @@ void sortStack(Stack **pt) {
 
 int main() {
 	Stack *top = NULL;
-	push(&top,1);
-	push(&top,2);
-	push(&top,7);
-	push(&top,3);
-	push(&top,9);
-	print(&top);
-	sortStack(&top);
-	printf("\n");
-	print(&top);
-	printf("\n");
-	reverse(&top);
-	print(&top);
-	pop(&top);
-	printf("\n");
+	char a;
+	while ((a = getchar()) != '\n' && a != EOF){
+		push(&top,a);
+	}
 	print(&top);
 	return 0;
+
+	//asedfstsdsfasdassfadasdfasdsafdasfsda
 }
