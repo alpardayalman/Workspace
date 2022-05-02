@@ -68,3 +68,10 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ## Assignments
 ...
+
+## What I want to learn more.
+<table>
+<td>
+  --Permutations.
+</td>
+</table>
