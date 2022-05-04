@@ -71,7 +71,13 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ## What I want to learn more.
 <table>
+<td> 
+  Permutations.
+</td>
 <td>
-  --Permutations.
+  The halting problem.
+</td>
+ <td>
+  OpenCV.
 </td>
 </table>
