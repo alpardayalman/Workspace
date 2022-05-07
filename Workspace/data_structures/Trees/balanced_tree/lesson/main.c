@@ -18,26 +18,26 @@ struct Node *createNode(int data) {
 	return (ret);
 }
 ///Odev
-int checkBalance(struct Node *root, int *height) {
-	//Check for emptiness
+// int checkBalance(struct Node *root, int *height) {
+// 	//Check for emptiness
 
-	int leftHeight = 0, rightHeight = 0;
-	int l = 0, r = 0;
+// 	int leftHeight = 0, rightHeight = 0;
+// 	int l = 0, r = 0;
 
-	if(root == NULL){
-		*height = 0;
-		return true;
-	}
+// 	if(root == NULL){
+// 		*height = 0;
+// 		return true;
+// 	}
 
-	l = checkBalance(root->left, &leftHeight);
-	r = checkBalance(root->right, &rightHeight);
+// 	l = checkBalance(root->left, &leftHeight);
+// 	r = checkBalance(root->right, &rightHeight);
 
-	*height = (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
-	if(abs(leftHeight-rightHeight) >= 2)
-		return false;
-	else
-		return (l && r);
-}
+// 	*height = (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
+// 	if(abs(leftHeight-rightHeight) >= 2)
+// 		return false;
+// 	else
+// 		return (l && r);
+// }
 
 
 int myCheckBalance(struct Node *root, int *height) {
@@ -48,10 +48,10 @@ int myCheckBalance(struct Node *root, int *height) {
 		return true;
 	}
 
-	l = checkBalance(root, &leftH);
-	r = checkBalance(root, &rightH);
+	l = myCheckBalance(root->left, &leftH);
+	r = myCheckBalance(root->right, &rightH);
 
-	*height = rightH > leftH?rightH:leftH + 1;
+	*height = rightH > leftH?rightH + 1:leftH + 1;
 
 	if (abs(rightH - leftH) >= 2) {
 		return false;
