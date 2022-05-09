@@ -17,7 +17,7 @@ struct Node *createNode(int data) {
 	ret->left = NULL;
 	return (ret);
 }
-///Odev
+//Odev
 // int checkBalance(struct Node *root, int *height) {
 // 	//Check for emptiness
 
@@ -51,9 +51,9 @@ int myCheckBalance(struct Node *root, int *height) {
 	l = myCheckBalance(root->left, &leftH);
 	r = myCheckBalance(root->right, &rightH);
 
-	*height = rightH > leftH?rightH + 1:leftH + 1;
+	*height = (rightH > leftH ? rightH : leftH) + 1;
 
-	if (abs(rightH - leftH) >= 2) {
+	if (abs(rightH - leftH) > 1) {
 		return false;
 	}
 	else
@@ -67,7 +67,8 @@ int main() {
 	root->right = createNode(3);
 	root->left->left = createNode(4);
 	root->left->right = createNode(5);
-
+	root->right->left = createNode(6);
+	root->right->right = createNode(7);
 	if (myCheckBalance(root,&height))
 		printf("Balanced");
 	else
