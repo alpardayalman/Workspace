@@ -12,6 +12,9 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 - [Data Structures](#data-structures)
   - [Linked List](#linked-list)
   - [Stacks](#stacks)
+  - [Queues](#queues)
+  - [Trees](#trees)
+  - [Graphs](#graphs)
 - [Assignments](#assignments)
   - [Next](#next)
 
@@ -59,6 +62,33 @@ A linked list is a linear data structure, in which the elements are not stored a
 <td>
   
 In computer science, a stack is an abstract data type that serves as a collection of elements, with two main principal operations: Push, which adds an element to the collection, and Pop, which removes the most recently added element that was not yet removed.
+
+</td>
+</table>
+
+### Queues
+<table>
+<td>
+  
+A queue in C is basically a linear data structure to store and manipulate the data elements. It follows the order of First In First Out (FIFO). In queues, the first element entered into the array is the first element to be removed from the array.
+
+</td>
+</table>
+
+### Trees
+<table>
+<td>
+  
+Binary Tree in C is a non-linear data structure in which the node is linked to two successor nodes, namely root, left and right. Binary trees are a very popular concept in the C programming language.
+
+</td>
+</table>
+
+### Graphs
+<table>
+<td>
+  
+In a Graph, we have a set of nodes (a.k.a vertices) and these nodes are connected with each other with the help of some edges. The nodes or vertices are used to store data and this data can be used further. A graph is a type of non-linear data structure that is used to store data in the form of nodes and edges.
 
 </td>
 </table>
