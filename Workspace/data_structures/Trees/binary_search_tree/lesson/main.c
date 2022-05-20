@@ -19,9 +19,7 @@ struct Node *newNode(int data)
 void inOrder(struct Node *root)
 {
 	if (root == NULL)
-	{
 		return;
-	}
 	inOrder(root->left);
 	printf("%d -> ", root->data);
 	inOrder(root->right);
@@ -30,9 +28,7 @@ void inOrder(struct Node *root)
 void preOrder(struct Node *root)
 {
 	if (root == NULL)
-	{
 		return;
-	}
 	printf("%d -> ", root->data);
 	preOrder(root->left);
 	preOrder(root->right);
@@ -41,9 +37,7 @@ void preOrder(struct Node *root)
 void postOrder(struct Node *root)
 {
 	if (root == NULL)
-	{
 		return;
-	}
 	postOrder(root->left);
 	postOrder(root->right);
 	printf("%d -> ", root->data);
@@ -126,6 +120,29 @@ struct Node *delete (struct Node *root, int data)
 	}
 	return root;
 }
+//Odev ...
+// int count = 0;
+// Node* kthSmallest(Node* root, int k)
+// {
+//     // base case
+//     if (root == NULL)
+//         return NULL;
+
+//     // search in left subtree
+//     Node* left = kthSmallest(root->left, k);
+
+//     // if k'th smallest is found in left subtree, return it
+//     if (left != NULL)
+//         return left;
+
+//     // if current element is k'th smallest, return it
+//     count++;
+//     if (count == k)
+//         return root;
+
+//     // else search in right subtree
+//     return kthSmallest(root->right, k);
+// }
 
 int main(void)
 {
@@ -147,7 +164,7 @@ int main(void)
 
 //Find the k'th smallest and largest nodes in BST
 
-//Convert binary tree to BST maintaining its orginal structure.
+//Convert binary tree to BST maintaining its original structure.
 
 //Remove nodes from BST that is not located in given range
 

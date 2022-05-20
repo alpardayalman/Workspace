@@ -39,7 +39,6 @@ struct Node *createNode(int data) {
 // 		return (l && r);
 // }
 
-
 int myCheckBalance(struct Node *root, int *height) {
 	int l = 0, r = 0;
 	int leftH = 0, rightH = 0;
@@ -66,8 +65,9 @@ int main() {
 	root->left = createNode(2);
 	root->right = createNode(3);
 	root->left->left = createNode(4);
+	root->left->left->left = createNode(6);
+	root->left->left->left->left = createNode(6);
 	root->left->right = createNode(5);
-	root->right->left = createNode(6);
 	root->right->right = createNode(7);
 	if (myCheckBalance(root,&height))
 		printf("Balanced");

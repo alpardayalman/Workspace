@@ -17,10 +17,28 @@ bool isEmpty(struct sNode *top);
 void print(struct sNode *top);
 void edge(struct sNode **top);
 int	peek(struct sNode *top);
-
+void reverse(struct sNode **top_ref);
 int peek(struct sNode *top) {
 	return (top->data);
 }
+
+// void insertAtBottom(struct sNode **top_ref, int item){
+// 	if(isEmpty(*top_ref))
+// 		push(top_ref,item);
+// 	else{
+// 		int temp = pop(top_ref);
+// 		insertAtBottom(top_ref,item);
+// 		push(top_ref,temp);
+// 	}
+// }
+
+// void reverse(struct sNode **top_ref){
+// 	if(!isEmpty(*top_ref)){
+// 		int temp = pop(top_ref);
+// 		// reverse(top_ref);
+// 		insertAtBottom(top_ref,temp);
+// 	}
+// }
 
 void insertAtBottom(struct sNode **top_ref, int item){
 	if(isEmpty(*top_ref))
@@ -38,6 +56,20 @@ void reverse(struct sNode **top_ref){
 		reverse(top_ref);
 		insertAtBottom(top_ref,temp);
 	}
+}
+
+void anti_reverse(struct sNode **top_ref){
+	if(!isEmpty(*top_ref)){
+		int temp = pop(top_ref);
+		// reverse(top_ref);
+		insertAtBottom(top_ref,temp);
+	}
+}
+
+void full_reverse(struct sNode **top_ref){
+	reverse(top_ref);
+	anti_reverse(top_ref);
+	reverse(top_ref);
 }
 
 bool isEmpty(struct sNode *top){
@@ -99,27 +131,27 @@ void print(struct sNode *top){
 }
 
 // Sorting
-void sortedInsert(struct sNode **start, int a)
-{
-    if (isEmpty(*start) || a > peek(*start))
-    {
-        push(start, a);
-        return;
-    }
-    int temp = pop(start);
-    sortedInsert(start, a);
-    push(start, temp);
-}
+// void sortedInsert(struct sNode **start, int a)
+// {
+//     if (isEmpty(*start) || a > peek(*start))
+//     {
+//         push(start, a);
+//         return;
+//     }
+//     int temp = pop(start);
+//     sortedInsert(start, a);
+//     push(start, temp);
+// }
 
-void sortStack(struct sNode **start)
-{
-    if (!isEmpty(*start))
-    {
-        int a = pop(start);
-        sortStack(start);
-        sortedInsert(start, a);
-    }
-}
+// void sortStack(struct sNode **start)
+// {
+//     if (!isEmpty(*start))
+//     {
+//         int a = pop(start);
+//         sortStack(start);
+//         sortedInsert(start, a);
+//     }
+// }
 
 int main(){
 	struct sNode *s = NULL;
@@ -129,14 +161,12 @@ int main(){
     push(&s, 2);
     push(&s, 1);
 	push(&s,-1);
+	push(&s,10);
 
     printf("\n Original Stack ");
     print(s);
-    reverse(&s);
+    full_reverse(&s);
     printf("\n Reversed Stack ");
     print(s);
-	edge(&s);
-	sortStack(&s);
-	print(s);
     return 0;
 }
