@@ -36,6 +36,8 @@ struct Node *insert(struct Node *nod, int data)
 	return nod;
 }
 
+
+
 struct Node *delete (struct Node *nod, int data)
 {
 	if (nod == NULL)
@@ -140,7 +142,7 @@ int main() {
 	for (int i = 0; i < (sizeof(a)/sizeof(a[0])); i++) {
 		root = insert(root,a[i]);
 	}
-	printf("%d",kthSmallest(root,4)->data);
+	// printf("%d",kthSmallest(root,4)->data);
 	return 1;
 }
 

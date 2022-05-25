@@ -12,8 +12,10 @@ void init(int **a){
 }
 
 void addEdge(int **a, int src, int dest) {
-	a[src][dest] = 1;
-	a[dest][src] = 1;
+	if (src != dest) {
+		a[src][dest] = 1;
+		a[dest][src] = 1;
+	}
 }
 
 void printMat(int **a) {

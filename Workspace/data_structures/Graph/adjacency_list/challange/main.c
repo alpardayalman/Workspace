@@ -33,13 +33,13 @@ struct Graph *createGraph(int num) {
 }
 
 void addadj(struct Graph *node, int a, int b) {
-	struct node *new = creatEdge(a);
-	new->next = node->adjLists[b];
-	node->adjLists[b] = new;
-
-	new = creatEdge(b);
+	struct node *new = creatEdge(b);
 	new->next = node->adjLists[a];
 	node->adjLists[a] = new;
+
+	new = creatEdge(a);
+	new->next = node->adjLists[b];
+	node->adjLists[b] = new;
 }
 
 void printrec(struct node *hey) {
@@ -75,7 +75,7 @@ int main() {
 	addadj(head,1,2);
 	printgrapy(head);
 	printf("\n");
-	if (check(head,3,1))
+	if (check(head,0,1))
 		printf("var");
 	else
 		printf("yok");
