@@ -6,7 +6,7 @@
 /*   By: ardayalman <ardayalman@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 09:46:48 by ardayalman        #+#    #+#             */
-/*   Updated: 2022/05/25 11:57:04 by ardayalman       ###   ########.fr       */
+/*   Updated: 2022/05/26 18:45:25 by ardayalman       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 struct Node
 {
-	int a;
+	int key;
 	struct Node *next;
 };
 
@@ -44,20 +44,20 @@ struct Graph *node_init(int vertex)
 struct Node *create_node(int vertex)
 {
 	struct Node *ret = malloc(sizeof(struct Node));
-	ret->a = vertex;
+	ret->key = vertex;
 	ret->next = NULL;
 	return (ret);
 }
 
 void add(struct Graph *graph, int src, int dest)
 {
-	struct Node *a = create_node(src);
-	a->next = graph->adjList[dest];
-	graph->adjList[dest] = a;
+	struct Node *key = create_node(src);
+	key->next = graph->adjList[dest];
+	graph->adjList[dest] = key;
 
-	a = create_node(dest);
-	a->next = graph->adjList[src];
-	graph->adjList[src] = a;
+	key = create_node(dest);
+	key->next = graph->adjList[src];
+	graph->adjList[src] = key;
 }
 
 void printGraph(struct Graph *graph)
@@ -66,29 +66,24 @@ void printGraph(struct Graph *graph)
 	for (v = 0; v < graph->numVertices; v++)
 	{
 		struct Node *temp = graph->adjList[v];
-		printf("\n Vertex %d: ", v);
+		printf("\nVertex %d: ", v);
 		while (temp)
 		{
-			printf("%d -> ", temp->a);
+			printf("%d -> ", temp->key);
 			temp = temp->next;
 		}
 		printf("\n");
 	}
 }
 
-void DFS(struct Graph *graph, int vertex)
+void myDFS(struct Graph *graph, int vertex)
 {
-	struct Node *adjList = graph->adjList[vertex];
-	struct Node *temp = adjList;
-
+	struct Node *temp = graph->adjList[vertex];
 	graph->visited[vertex] = 1;
-
 	printf("Visited: %d\n", vertex);
-
-	while (temp != NULL)
+	while (temp)
 	{
-		int connectedVertex = temp->a;
-
+		int connectedVertex = temp->key;
 		if (graph->visited[connectedVertex] == 0)
 		{
 			DFS(graph, connectedVertex);
