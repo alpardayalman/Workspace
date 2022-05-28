@@ -103,6 +103,7 @@ Stack *solve(int labyrinth[10][10])
 	Stack *ans = (Stack *)malloc(sizeof(Stack));
 	ans->data = 32;
 	ans->next = NULL;
+	// Stack *ans = NULL;
 
 	int x = 0;
 	int y = 0;

@@ -6,7 +6,7 @@
 /*   By: ardayalman <ardayalman@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 09:46:48 by ardayalman        #+#    #+#             */
-/*   Updated: 2022/05/26 18:45:25 by ardayalman       ###   ########.fr       */
+/*   Updated: 2022/05/27 10:35:42 by ardayalman       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ void myDFS(struct Graph *graph, int vertex)
 		int connectedVertex = temp->key;
 		if (graph->visited[connectedVertex] == 0)
 		{
-			DFS(graph, connectedVertex);
+			myDFS(graph, connectedVertex);
 		}
 		temp = temp->next;
 	}
@@ -103,7 +103,7 @@ int main()
 
 	printGraph(graph);
 
-	DFS(graph, 0);
+	miDFS(graph, 0);
 
 	return 0;
 }
