@@ -1,23 +1,26 @@
-CFLAGS	= gcc -glldb -Wall -Wextra -Werror -o
-NAME	= push_swap
+CFLAGS	= gcc -Wall -Wextra -Werror -o
+NAME	= a.pandamonium
+# DEBUG
+# CFLAGS = gcc -glldb -Wall -Wextra -Werror -o
 
-SRC = src/push_swap.c src/sort_3.c \
-	rules/stack_utilities_1.c rules/stack_utilities_2.c rules/reverse_rotate.c rules/rotate.c rules/swap_push.c \
-	tree/duplicate_search.c tree/deletion.c tree/avl_tree_utilities.c tree/insert.c tree/rotation.c \
+SRC = src/dev/main.c src/dev/city_struct.c
 
 all: credit $(NAME)
 	@echo "██████████████████ Compiled ██████████████████"
 	@echo "\033[1;33mMartini\033[m"
 $(NAME):
-	@$(MAKE) -C libft/ re
-	$(CFLAGS) $(NAME) $(SRC) -L libft/ -lft -I inc
+	@$(MAKE) -C inc/libft/ re
+	$(CFLAGS) $(NAME) $(SRC) -L inc/libft/ -lft -I inc
+
+test: all
+	./pandamonium
 
 clean:
-	@$(MAKE) -C libft/ clean
+	@$(MAKE) -C inc/libft/ clean
 
 fclean: fclean
 	rm -f $(NAME)
-	@$(MAKE) -C libft/ fclean
+	@$(MAKE) -C inc/libft/ fclean
 
 re: fclean all
 
