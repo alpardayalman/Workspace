@@ -9,13 +9,22 @@
 #include "libft/include/libft.h"
 #include <string.h>
 
+typedef struct adj
+{
+	char *cityName;
+	int code;
+	int distance;
+} Adjacent;
+
 typedef struct Node
 {
 	char *cityName;
 	int code;
-	int adjDistances[81];
+	int Distances[81];
+	Adjacent *adjacencies;
 } City;
 
 City *createCity(char *code, char *name);
+Adjacent *createAdjList(int size);
 
 #endif

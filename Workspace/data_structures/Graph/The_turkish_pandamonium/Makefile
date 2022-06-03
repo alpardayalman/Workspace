@@ -1,7 +1,7 @@
-CFLAGS	= gcc -Wall -Wextra -Werror -o
+# CFLAGS	= gcc -Wall -Wextra -Werror -o
 NAME	= a.pandamonium
 # DEBUG
-# CFLAGS = gcc -glldb -Wall -Wextra -Werror -o
+CFLAGS = gcc -glldb -Wall -Wextra -Werror -o
 
 SRC = src/dev/main.c src/dev/city_struct.c
 
@@ -13,7 +13,7 @@ $(NAME):
 	$(CFLAGS) $(NAME) $(SRC) -L inc/libft/ -lft -I inc
 
 test: all
-	./pandamonium
+	./a.pandamonium
 
 clean:
 	@$(MAKE) -C inc/libft/ clean
