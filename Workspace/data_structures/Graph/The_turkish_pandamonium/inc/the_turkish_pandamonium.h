@@ -21,10 +21,10 @@ typedef struct Node
 	char *cityName;
 	int code;
 	int Distances[81];
-	Adjacent *adjacencies;
+	Adjacent **adjacencies;
 } City;
 
-City *createCity(char *code, char *name);
+City *createCity(char **dist, char **adj);
 Adjacent *createAdjList(int size);
-
+int sizeOfArray(char **array);
 #endif

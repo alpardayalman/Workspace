@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayalman <ayalman@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ardayalman <ardayalman@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 21:37:54 by ayalman           #+#    #+#             */
-/*   Updated: 2022/02/03 19:48:45 by ayalman          ###   ########.Tr       */
+/*   Updated: 2022/06/03 23:45:02 by ardayalman       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_trim_start(const char *s, const char *set)
+static int ft_trim_start(const char *s, const char *set)
 {
-	int	i;
-	int	j;
+	int i;
+	int j;
 
 	i = 0;
 	while (s[i])
@@ -26,20 +26,20 @@ static int	ft_trim_start(const char *s, const char *set)
 			if (s[i] == set[j])
 			{
 				i++;
-				break ;
+				break;
 			}
 			j++;
 		}
 		if (!set[j])
-			break ;
+			break;
 	}
 	return (i);
 }
 
-static int	ft_trim_end(const char *s, const char *set)
+static int ft_trim_end(const char *s, const char *set)
 {
-	int	i;
-	int	j;
+	int i;
+	int j;
 
 	i = ft_strlen(s) - 1;
 	while (s[i])
@@ -50,22 +50,22 @@ static int	ft_trim_end(const char *s, const char *set)
 			if (s[i] == set[j])
 			{
 				i--;
-				break ;
+				break;
 			}
 			j++;
 		}
 		if (!set[j])
-			break ;
+			break;
 	}
 	return (i);
 }
 
-char	*ft_strtrim(const char *s, const char *set)
+char *ft_strtrim(const char *s, const char *set)
 {
-	int		i;
-	int		j;
-	int		index;
-	char	*ptr;
+	int i;
+	int j;
+	int index;
+	char *ptr;
 
 	ptr = NULL;
 	if (s && set)
@@ -74,10 +74,10 @@ char	*ft_strtrim(const char *s, const char *set)
 		j = ft_trim_start(s, set);
 		if (i < j)
 			return (ft_strdup(""));
-		ptr = malloc (sizeof(char) * ((i + 1) - j + 1));
+		ptr = malloc(sizeof(char) * ((i + 1) - j + 1));
 		if (!ptr)
 			return (NULL);
-			index = 0;
+		index = 0;
 		while (j <= i)
 		{
 			ptr[index] = s[j];

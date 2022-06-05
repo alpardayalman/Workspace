@@ -1,7 +1,7 @@
 # CFLAGS	= gcc -Wall -Wextra -Werror -o
 NAME	= a.pandamonium
 # DEBUG
-CFLAGS = gcc -glldb -Wall -Wextra -Werror -o
+CFLAGS = gcc -O0 -glldb -Wall -Wextra -Werror -o
 
 SRC = src/dev/main.c src/dev/city_struct.c
 
