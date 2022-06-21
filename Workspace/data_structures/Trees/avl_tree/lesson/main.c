@@ -193,6 +193,53 @@ struct Node *deleteNode(struct Node *root, int key)
 	return root;
 }
 
+int counter(struct Node *root)
+{
+	if (root != NULL)
+	{
+
+		return counter(root->left) + counter(root->right) + 1;
+	}
+	return 0;
+}
+
+void get_elements(struct Node *root, int *auxiliary, int *index)
+{
+	if (root != NULL)
+	{
+
+		get_elements(root->left, auxiliary, index);
+		auxiliary[*index] += root->key;
+		(*index)++;
+		get_elements(root->right, auxiliary, index);
+	}
+}
+void find_median(struct Node *root)
+{
+	if (root != NULL)
+	{
+
+		int size = counter(root);
+		int *auxiliary = (int *)calloc(size, sizeof(int));
+		int index = 0;
+		get_elements(root, auxiliary, &index);
+		int result = 0;
+		if (size % 2 != 0)
+		{
+			index = (size) / 2;
+			result = auxiliary[index];
+		}
+		else
+		{
+			result = (auxiliary[(size - 1) / 2]);
+		}
+		printf("\nMedian : %d\n", result);
+		free(auxiliary);
+
+		auxiliary = NULL;
+	}
+}
+
 void inorder(struct Node *root)
 {
 	if (root != NULL)
@@ -211,10 +258,11 @@ int main()
 	{
 		root = insert(root, c[i]);
 	}
-
+	find_median(root);
 	inorder(root);
 
 	root = deleteNode(root, 13);
+	find_median(root);
 	printf("After Deletion!\n");
 	inorder(root);
 

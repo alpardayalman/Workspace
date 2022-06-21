@@ -12,7 +12,6 @@ int main(void)
 {
 	pthread_t thread;
 	int err = pthread_create(&thread, NULL, wait, NULL);
-
 	if (err)
 	{
 		printf("An error occurred!: %d", err);
