@@ -1,6 +1,5 @@
-# Data Structures & Algorithms Workspace.
+# My jurney to become the best programmer.
 
-My jurney to become the best programmer.
 
 [![-----------------------------------------------------](
 https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
@@ -20,7 +19,7 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ## School: Ecole 42.
 
-
+![alt text]([http://url/to/img.png](https://repository-images.githubusercontent.com/247835136/9eebcd80-40a4-11eb-9ee5-5e432fb15c4f))
 
 [![-----------------------------------------------------](
 https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
