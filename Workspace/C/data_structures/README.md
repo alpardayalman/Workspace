@@ -1,3 +1,5 @@
+[![-----------------------------------------------------](
+https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
 ## Data Structures
 <table>
 <td>
@@ -51,3 +53,5 @@ In a Graph, we have a set of nodes (a.k.a vertices) and these nodes are connecte
 
 </td>
 </table>
+[![-----------------------------------------------------](
+https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
