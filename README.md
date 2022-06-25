@@ -104,10 +104,7 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 <td> 
   Permutations.
 </td>
-<td>
-  The halting problem.
-</td>
  <td>
-  OpenCV.
+  Random ai topic.
 </td>
 </table>
