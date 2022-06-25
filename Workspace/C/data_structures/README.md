@@ -2,6 +2,22 @@
 
 [![-----------------------------------------------------](
 https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
+
+<details open="open">
+  <summary><h2>Table of Contents</h2></summary>
+  
+- [Data Structures](#data-structures)
+  - [Linked List](#linked-list)
+  - [Stacks](#stacks)
+  - [Queues](#queues)
+  - [Trees](#trees)
+  - [Graphs](#graphs)
+
+</details>
+
+
+[![-----------------------------------------------------](
+https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
 ## Data Structures
 <table>
 <td>
