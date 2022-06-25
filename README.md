@@ -7,19 +7,19 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 <details open="open">
   <summary><h2>Table of Contents</h2></summary>
   
-- [School](#school)
+- [Ecole_42](#ecole_42)
 - [Teacher](#teacher)
 - [Assignments](#assignments)
-  - [Next](#next)
+- [What_I_want_to_learn](#what_i_want_to_learn)
 
 </details>
 
 [![-----------------------------------------------------](
 https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
 
-## School: Ecole 42.
+## Ecole_42.
 
-![alt text]([http://url/to/img.png](https://repository-images.githubusercontent.com/247835136/9eebcd80-40a4-11eb-9ee5-5e432fb15c4f))
+![alt text](https://repository-images.githubusercontent.com/247835136/9eebcd80-40a4-11eb-9ee5-5e432fb15c4f)
 
 [![-----------------------------------------------------](
 https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
@@ -44,7 +44,10 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 ## Assignments.
 ...
 
-## What I want to learn more.
+[![-----------------------------------------------------](
+https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/alpardayalman?tab=repositories)
+
+## What_I_want_to_learn.
 <table>
 <td> 
   Permutations.
