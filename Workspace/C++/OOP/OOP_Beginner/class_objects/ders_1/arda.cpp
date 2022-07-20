@@ -26,6 +26,10 @@ public:
 		this->id = obj.getID();
 	}
 
+	~Students(){
+		cout<<"Destructor called!"<<endl;
+	}
+
 	// Parameterized Constructor
 	Students(string name, string surname, int id)
 	{
@@ -90,6 +94,7 @@ int main()
 	Students Ayberk = *new Students("Ayberk", "Saygi", 109);
 
 	Students Mehmet = *new Students();
+	
 	// Students *Koray = Ayberk;
 	// Koray->setName("XXX");
 

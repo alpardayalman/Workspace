@@ -4,10 +4,9 @@ int main()
 {
 	Student arda(102);
 	Instructor Ayberk(19);
-	Instructor Memo(1);
-	Memo.setClass(MATH);
-	Memo.setGrade(arda,MATH,120);
-	Memo.setGrade(arda,GEOGRAPHY,20);
+	Ayberk.setClass(GEOGRAPHY);
+	Ayberk.setGrade(arda,GEOGRAPHY,70);
+	Ayberk.setGrade(arda,MATH,0);
 	arda.getGrades();
 
 
