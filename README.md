@@ -6,9 +6,8 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 <details open="open">
   <summary><h2>Table of Contents</h2></summary>
-  
+
 - [Ecole_42](#ecole_42)
-- [Teacher](#teacher)
 - [Assignments](#assignments)
 - [What_I_want_to_learn](#what_i_want_to_learn)
 
@@ -26,13 +25,7 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ## Teacher.
 <div>
-  
-<h3 align="right"> 
-  
-  [@rootroxox](https://www.github.com/rootroxox) 
-  
-</h3>
-  
+
 ![Alt Text](https://i.pinimg.com/originals/2f/45/a2/2f45a2bfde367d5608532bb880f6a64d.gif)
 
 </div>
@@ -49,7 +42,7 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 ## What_I_want_to_learn.
 <table>
-<td> 
+<td>
   Permutations.
 </td>
  <td>
